@@ -1,0 +1,111 @@
+.friend {
+  height: 100%;
+  padding: 20px;
+    background-color: #f3f5f9;
+  // background-color: greenyellow;
+  overflow: auto;
+  h3 {
+    height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .contentF {
+    min-height: calc(100% - 40px);
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    .timLoc {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 20px;
+      gap: 15px;
+      height: 40px;
+      .timKiem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 350px;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        padding: 0 10px;
+        input {
+          border: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          font-size: 14px;
+        }
+      }
+
+      .loc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 15px;
+
+        .selectLoc {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 250px;
+          font-size: 14px;
+          font-weight: normal;
+          padding:0 5px;
+          border-radius: 5px;
+          border: 1px solid #d9d9d9;
+          background-color: #EAEDF0;
+          cursor: pointer;
+
+          select {
+            flex: 1;
+            border: none;
+            background-color: transparent;
+          //   appearance: none;
+
+            &:focus {
+              outline: none; 
+            }
+          }
+        }
+      }
+    }
+
+    .listF {
+      display: flex;
+      flex-direction: column;
+      .itemF {
+        display: flex;
+        gap: 10px;
+        padding-left: 20px;
+        .avatar-img {
+          display: flex;
+          align-items: center;
+          border-radius: 100%;
+          margin: 10px;
+        }
+
+        .nameF {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #D0D3D6;
+        }
+
+        &:last-of-type {
+          .nameF {
+            border-bottom: none;
+          }
+        }
+
+        &:hover {
+          background-color: #f3f5f9; // Thay đổi màu nền khi di chuột lên
+        }
+      }
+    }
+  }
+}

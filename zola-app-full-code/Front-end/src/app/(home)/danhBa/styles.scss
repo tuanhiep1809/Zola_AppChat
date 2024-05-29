@@ -1,0 +1,60 @@
+.danhBa {
+  display: flex;
+  width: calc(100vw - 64px);
+  height: 100%;
+  .itemL {
+    flex: 2;
+    border-right: 1px solid #d0d3d6;
+    // background-color: greenyellow;
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 64px;
+      border-bottom: 1px solid #d0d3d6;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      .item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 64px;
+        padding: 10px 15px;
+        cursor: pointer;
+        gap: 10px;
+
+        &:hover {
+          background-color: #f3f5f9; // Thay đổi màu nền khi di chuột lên
+        }
+      }
+      .active {
+        background-color: rgb(174, 221, 251) !important;
+      }
+    }
+  }
+
+  .itemR {
+    flex: 7;
+    flex-direction: column;
+    position: relative;
+    .title {
+      width: 100%;
+      height: 64px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 10px 15px;
+      cursor: pointer;
+      gap: 10px;
+      border-bottom: 1px solid #d0d3d6;
+    }
+
+    .children {
+      width: 100%;
+      height: calc(100% - 85px);
+    }
+  }
+}
