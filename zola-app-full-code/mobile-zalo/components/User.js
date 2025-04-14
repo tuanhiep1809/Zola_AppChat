@@ -25,7 +25,7 @@ export default function User() {
   useEffect(() => {
     fetchUserData();
   }, []);
-
+//aa
   useEffect(() => {
     const unsubscribe = navigation.addListener("focus", () => {
       fetchUserData();
